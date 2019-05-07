@@ -10,24 +10,43 @@
         android:id="@+id/edit_text_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
-        android:layout_marginTop="92dp"/>
+        android:layout_marginTop="92dp"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:hint="Email" />
 
+
+    <TextView
+        android:text="Senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/edit_text_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Senha" />
+        android:hint="Senha"
+        android:maxLines="1"
+        android:inputType="numberPassword"
+         />
+
+
+
 
     <Button
         android:id="@+id/btnlogin"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
         android:layout_marginTop="450dp"
-        android:hint="Login" />
+        android:hint="Login"
+        android:textColor="@color/colorAccent" />
+
+
 
 
 </LinearLayout>
+
+
